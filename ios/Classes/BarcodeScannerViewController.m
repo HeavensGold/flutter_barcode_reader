@@ -27,48 +27,10 @@
     UIColor *barBgColor = NULL; // Navigation bar background color
     UIColor *primaryColor = NULL; // Navigation bar text/foreground color + scan rect corners
     
-    if ([@"kalium" isEqualToString:self.theme]) {
-        barBgColor = [UIColor colorWithRed:0.13 green:0.13 blue:0.14 alpha:1.0];
-        primaryColor = [UIColor colorWithRed:0.98 green:0.87 blue:0.07 alpha:1.0];
-    } else if ([@"natrium" isEqualToString:self.theme]) {
-        barBgColor = [UIColor colorWithRed:0.16 green:0.23 blue:0.30 alpha:1.0];
-        primaryColor = [UIColor colorWithRed:0.64 green:0.80 blue:1.00 alpha:1.0];
-    } else if ([@"beryllium" isEqualToString:self.theme]) {
-        barBgColor = [UIColor colorWithRed:0.09 green:0.09 blue:0.10 alpha:1.0];
-        primaryColor = [UIColor colorWithRed:0.74 green:0.63 blue:1.00 alpha:1.0];
-    } else if ([@"titanium" isEqualToString:self.theme]) {
-        barBgColor = [UIColor colorWithRed:0.02 green:0.13 blue:0.16 alpha:1.0];
-        primaryColor = [UIColor colorWithRed:0.38 green:0.78 blue:0.68 alpha:1.0];
-    } else if ([@"iridium" isEqualToString:self.theme]) {
-        barBgColor = [UIColor colorWithRed:1.00 green:1.00 blue:1.00 alpha:1.0];
-        primaryColor = [UIColor colorWithRed:0.00 green:0.56 blue:0.33 alpha:1.0];
-    } else if ([@"ruthium" isEqualToString:self.theme]) {
-        barBgColor = [UIColor colorWithRed:1.00 green:0.79 blue:0.82 alpha:1.0];
-        primaryColor = [UIColor colorWithRed:0.84 green:0.45 blue:0.49 alpha:1.0];
-    } else if ([@"radium" isEqualToString:self.theme]) {
-        barBgColor = [UIColor colorWithRed:0.10 green:0.02 blue:0.21 alpha:1.0];
-        primaryColor = [UIColor colorWithRed:0.22 green:0.89 blue:0.54 alpha:1.0];
-    } else if ([@"indium" isEqualToString:self.theme]) {
+   if ([@"idena" isEqualToString:self.theme]) {
         barBgColor = [UIColor colorWithRed:1.00 green:1.00 blue:1.00 alpha:1.0];
         primaryColor = [UIColor colorWithRed:0.00 green:0.31 blue:0.73 alpha:1.0];
-    } else if ([@"neptunium" isEqualToString:self.theme]) {
-        barBgColor = [UIColor colorWithRed:0.03 green:0.03 blue:0.25 alpha:1.0];
-        primaryColor = [UIColor colorWithRed:0.29 green:0.56 blue:0.89 alpha:1.0];
-    } else if ([@"thorium" isEqualToString:self.theme]) {
-        barBgColor = [UIColor colorWithRed:0.16 green:0.06 blue:0.32 alpha:1.0];
-        primaryColor = [UIColor colorWithRed:0.46 green:0.95 blue:1.00 alpha:1.0];
-    } else if ([@"blaise" isEqualToString:self.theme]) {
-        barBgColor = [UIColor colorWithRed:1.00 green:1.00 blue:1.00 alpha:1.0];
-        primaryColor = [UIColor colorWithRed:0.97 green:0.58 blue:0.12 alpha:1.0];
-    } else if ([@"blaisedark" isEqualToString:self.theme]) {
-        barBgColor = [UIColor colorWithRed:0.11 green:0.12 blue:0.13 alpha:1.0];
-        primaryColor = [UIColor colorWithRed:0.51 green:0.53 blue:0.71 alpha:1.0];
-    } else if ([@"copper" isEqualToString:self.theme]) {
-        barBgColor = [UIColor colorWithRed:0.17 green:0.17 blue:0.22 alpha:1.0];
-        primaryColor = [UIColor colorWithRed:0.87 green:0.55 blue:0.32 alpha:1.0];
-    } else {
-        primaryColor = [UIColor colorWithRed:1.0 green:1.0 blue:1.0 alpha:1.0];
-    }
+    } 
 
     if (barBgColor != NULL && primaryColor != NULL) {
         bar.barTintColor = barBgColor;

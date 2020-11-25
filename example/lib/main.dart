@@ -45,7 +45,7 @@ class _MyAppState extends State<MyApp> {
 
   Future scan() async {
     try {
-      String barcode = await BarcodeScanner.scan(OverlayTheme.KALIUM);
+      String barcode = await BarcodeScanner.scan(OverlayTheme.IDENA);
       setState(() => this.barcode = barcode);
     } on PlatformException catch (e) {
       if (e.code == BarcodeScanner.CameraAccessDenied) {
