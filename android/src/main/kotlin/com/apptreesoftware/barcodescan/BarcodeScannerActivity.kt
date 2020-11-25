@@ -43,7 +43,7 @@ class BarcodeScannerActivity : Activity(), ZXingScannerView.ResultHandler {
         if (theme != null && theme.equals("idena")) {
             actionBarColor = 0xFF0050BB.toInt()
             scannerView.setBorderColor(0xFF0050BB.toInt())
-            actionBar.setBackgroundDrawable(ColorDrawable(0xFFFFFFFF.toInt()))
+            actionBar?.setBackgroundDrawable(ColorDrawable(0xFFFFFFFF.toInt()))
             if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.M) {
                 scannerView.setSystemUiVisibility(View.SYSTEM_UI_FLAG_LIGHT_STATUS_BAR);
             }
